@@ -15,6 +15,7 @@ main {
     width: 100%;
     min-height: 100%;
     position: relative;
+    background-color: #F1F2F4;
 }
 
 main>nav {
@@ -25,7 +26,7 @@ main>nav {
     align-items: center;
     justify-content: space-between;
     padding: 0 5vw 0 2vw;
-    /* position: fixed; */
+
 }
 
 nav>ul {
@@ -131,10 +132,9 @@ nav ul li:hover .dropdown {
 
 .others {
     width: 100%;
-    min-height: 100%;
-    background-color: #F1F2F4;
+    height: calc(100% - 5vw);
     padding-inline: 1vw;
-    position: absolute;
+    /* position: absolute; */
 
 }
 
@@ -146,6 +146,7 @@ nav ul li:hover .dropdown {
     display: flex;
     align-items: center;
     justify-content: center;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .first-box>ul {
@@ -162,4 +163,125 @@ nav ul li:hover .dropdown {
     gap: 10px;
     font-weight: 600;
     font-size: 14px;
+}
+
+.slider {
+    width: 100%;
+    height: 16vw;
+    background-color: #ffffff;
+    margin-top: 1vw;
+    display: flex;
+    overflow: hidden;
+}
+
+.slider>img {
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+.slider>.arrow {
+    width: 98%;
+    height: 16.18vw;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.slider>.arrow>i {
+    background-color: #fff;
+    padding: 1vw;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2px;
+    font-size: 18px;
+    color: #323232;
+    box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.deals {
+    width: 100%;
+    height: 22vw;
+    background-color: #fff;
+    margin-block: 1vw;
+}
+
+.heading {
+    width: 100%;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 1vw;
+}
+
+.heading>i {
+    background-color: #1C41D6;
+    color: #fff;
+    height: 25px;
+    width: 25px;
+    border-radius: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.deals>.deal-card {
+    width: 100%;
+    height: calc(22vw - 75px);
+    padding-block: 0.5vw;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.7vw;
+    align-items: center;
+    justify-content: center;
+}
+
+.box {
+    width: 220px;
+    height: 100%;
+    border: 1px solid #dadada;
+    border-radius: 5px;
+    padding: 1vw;
+}
+
+.box>.box-img {
+    width: 100%;
+    height: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box-img>img {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+.box>p {
+    text-align: center;
+    font-weight: bold;
+    margin-block: 5px;
+}
+
+.box-img>img:hover {
+    background: #000;
+    opacity: 0.8;
+    cursor: pointer;
+
+}
+
+
+footer {
+    width: 100%;
+    height: 20vw;
+    background-color: #212121;
+    color: #fff;
 }
